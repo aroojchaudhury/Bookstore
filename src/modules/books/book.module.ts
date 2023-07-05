@@ -4,7 +4,6 @@ import { Book } from './book.model';
 import { BooksService } from './book.service';
 import { BooksController } from './book.controller';
 import { BookResolver } from './book.resolver';
-import { AuthorsService } from '../authors/author.service';
 import { AuthorsModule } from '../authors/author.module';
 
 @Module({
