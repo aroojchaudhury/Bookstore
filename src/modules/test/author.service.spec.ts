@@ -109,7 +109,7 @@ describe('AuthorsService', () => {
       const id = 1;
       const updatedAuthor: UpdateAuthorDto = { name: 'Arooj Updated' };
       jest.spyOn(authorsService, 'findOne').mockResolvedValue(null);
-      jest.spyOn(authorRepository, 'save'); // Add this line
+      jest.spyOn(authorRepository, 'save'); 
 
       const result = await authorsService.update(id, updatedAuthor);
 
@@ -136,7 +136,7 @@ describe('AuthorsService', () => {
     it('null if the author is not found', async () => {
       const id = 1;
       jest.spyOn(authorsService, 'findOne').mockResolvedValue(null);
-      jest.spyOn(authorRepository, 'remove'); // Add this line
+      jest.spyOn(authorRepository, 'remove'); 
 
       const result = await authorsService.remove(id);
 
