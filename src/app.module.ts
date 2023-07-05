@@ -7,7 +7,6 @@ import { BooksModule } from './modules/books/book.module';
 import { AuthorsModule } from './modules/authors/author.module';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GraphQLModule } from '@nestjs/graphql';
-import { join } from 'path';
 
 @Module({
   imports: [
